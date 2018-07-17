@@ -1,0 +1,21 @@
+new_http_archive(
+    name = "libxml_archive",
+    build_file = "libxml.BUILD",
+    sha256 = "f63c5e7d30362ed28b38bfa1ac6313f9a80230720b7fb6c80575eeab3ff5900c",
+    strip_prefix = "libxml2-2.9.7",
+    urls = [
+        "https://mirror.bazel.build/xmlsoft.org/sources/libxml2-2.9.7.tar.gz",
+        "http://xmlsoft.org/sources/libxml2-2.9.7.tar.gz",
+    ],
+)
+
+new_http_archive(
+    name = "zlib_archive",
+    build_file = "zlib.BUILD",
+    sha256 = "c3e5e9fdd5004dcb542feda5ee4f0ff0744628baf8ed2dd5d66f8ca1197cb1a1",
+    strip_prefix = "zlib-1.2.11",
+    urls = [
+        "https://mirror.bazel.build/zlib.net/zlib-1.2.11.tar.gz",
+        "https://zlib.net/zlib-1.2.11.tar.gz",
+    ],
+)

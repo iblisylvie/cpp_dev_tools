@@ -1,3 +1,5 @@
+// Author: iblisylvie@gmail.com (Qian Li)
+
 #include <math.h>  // sqrt
 
 #include "gtest/gtest.h"

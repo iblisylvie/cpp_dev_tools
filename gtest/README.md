@@ -1,4 +1,5 @@
-This directory contains a demo usage on xml in c++, which is ported from https://github.com/deepmind/lab
+This directory contains a demo usage on gtest in c++.
+This demo is tested on Ubuntu 14.04 with bazel version 0.13.0.
 To run the demo, you should following the next instructions.
 
 1. Follow below page to set up bazel build tool

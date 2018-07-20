@@ -1,0 +1,5 @@
+git_repository(
+    name = "com_google_absl",
+    remote = "https://github.com/abseil/abseil-cpp.git",
+    commit = "2c5af55ed34850d8b7dd46177c8ca53fdfda920e",
+)

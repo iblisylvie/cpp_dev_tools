@@ -10,4 +10,4 @@ Use "bazel test ..." to build all targets and run all test cases.
 For more build methods, read bazel's documentation for detail information.
 
 2. run bazel build ...
-3. bazel-bin/src/gflag_demo --big_menu=true --languages=cn
+3. run bazel-bin/src/gflag_demo --big_menu=true --languages=cn

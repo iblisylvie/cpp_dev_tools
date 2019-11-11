@@ -1,5 +1,5 @@
 This directory contains a demo usage on grpc in c++.
-This demo is tested on Ubuntu 14.04 with bazel version 0.13.0.
+This demo is tested on Ubuntu 16.04 with bazel version 0.27.0.
 To run the demo, you should following the next instructions.
 
 1. Follow below page to set up bazel build tool

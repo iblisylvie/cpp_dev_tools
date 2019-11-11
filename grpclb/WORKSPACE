@@ -1,9 +1,19 @@
-git_repository(
-  name = "org_pubref_rules_protobuf",
-  remote = "https://github.com/pubref/rules_protobuf",
-  tag = "v0.8.2",
-  #commit = "..." # alternatively, use latest commit on master
+# GRPC bazel related project configs you can get details from the following link
+# https://github.com/rules-proto-grpc/rules_proto_grpc
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+    name = "rules_proto_grpc",
+    urls = ["https://github.com/rules-proto-grpc/rules_proto_grpc/archive/0.1.0.tar.gz"],
+    sha256 = "965423066b8fc3cb580161fddad265e4914fdaaf957a0b70b0ec79a3ebabd2ab",
+    strip_prefix = "rules_proto_grpc-0.1.0",
 )
 
-load("@org_pubref_rules_protobuf//cpp:rules.bzl", "cpp_proto_repositories")
-cpp_proto_repositories()
+load("@rules_proto_grpc//:repositories.bzl", "rules_proto_grpc_toolchains")
+rules_proto_grpc_toolchains()
+
+load("@rules_proto_grpc//cpp:repositories.bzl", rules_proto_grpc_cpp_repos="cpp_repos")
+rules_proto_grpc_cpp_repos()
+
+load("@com_github_grpc_grpc//bazel:grpc_deps.bzl", "grpc_deps")
+grpc_deps()
